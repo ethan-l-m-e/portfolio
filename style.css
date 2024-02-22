@@ -1,0 +1,65 @@
+:root {
+    /* Colour palette */
+    --color-primary: #607274;
+    --color-secondary: #FAEED1;
+    --color-accent: #DED0B6;
+
+    /* Dimensions */
+    --card-width: 300px;
+    --card-height: 250px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-primary);
+    margin: 0;
+}
+
+/* Page header */
+h1 {
+    margin: 0;
+    padding: 10px;
+}
+
+.header {
+    background-color: var(--color-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Page content */
+.project-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background-color: var(--color-secondary);
+    width: var(--card-width);
+    height: var(--card-height);
+    margin: 20px;
+}
+
+.card-header {
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.card-thumbnail {
+    height: 85%;
+}
+
+.thumbnail {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
