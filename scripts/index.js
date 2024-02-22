@@ -16,8 +16,10 @@ function createProjectCard(name, githubLink, playLink, imageSrc) {
             <div class="card-header micro-5-regular">
                 <div class="title-text">${name}</div>
                 <div class="external-links">
-                    <a class="link-github button" href="${githubLink}">GitHub</a>
-                    <a class="link-play button" href="${playLink}">Play</a>
+                    <a class="link-github button${!githubLink ? " hidden" : ""}" 
+                    href="${githubLink}">GitHub</a>
+                    <a class="link-play button${!playLink ? " hidden" : ""}" 
+                    href="${playLink}">Play</a>
                 </div>
             </div>
             <div class="card-thumbnail">
@@ -50,10 +52,28 @@ const listOfProjects = [
         imageSrc: "./images/sudoku.jpg"
     },
     {
+        name: "Tic-tac-toe",
+        githubLink: "https://github.com/ethan-l-m-e/tic_tac_toe",
+        playLink: "https://ethan-l-m-e.github.io/tic_tac_toe/",
+        imageSrc: "./images/tic-tac-toe.jpg"
+    },
+    {
         name: "Pong",
         githubLink: "https://github.com/ethan-l-m-e/pong",
         playLink: "https://ethan-l-m-e.github.io/pong/",
         imageSrc: "./images/pong.jpg"
+    },
+    {
+        name: "Guess The Number",
+        githubLink: "https://github.com/ethan-l-m-e/guess_the_number_game",
+        playLink: "https://ethan-l-m-e.github.io/guess_the_number_game/",
+        imageSrc: "./images/guess-the-number.jpg"
+    },
+    {
+        name: "Dodgeball",
+        githubLink: "https://github.com/ethan-l-m-e/dodgeball",
+        playLink: "", // No link.
+        imageSrc: "./images/dodgeball.jpg"
     }
 ]
 

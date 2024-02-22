@@ -30,6 +30,10 @@ body {
     box-shadow: 7px 7px;
 }
 
+.hidden {
+    display: none;
+}
+
 /* Page header */
 h1 {
     margin: 0;
@@ -50,6 +54,7 @@ h1 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 70px
 }
 
 .project-card {
