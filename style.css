@@ -1,8 +1,9 @@
 :root {
     /* Colour palette */
-    --color-primary: #607274;
-    --color-secondary: #FAEED1;
-    --color-accent: #DED0B6;
+    --color-primary: #219C90;
+    --color-secondary: #E9B824;
+    --color-tertiary: #EE9322;
+    --color-accent: #D83F31;
 
     /* Dimensions */
     --card-width: 300px;
@@ -28,7 +29,6 @@ body {
 h1 {
     margin: 0;
     padding: 10px;
-    font-size: 2em;
 }
 
 .header {
@@ -60,6 +60,19 @@ h1 {
     align-items: center;
     padding: 10px;
     font-size: 1.5em;
+}
+
+.button {
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+
+.link-github {
+    background-color: var(--color-tertiary);
+}
+
+.link-play {
+    background-color: var(--color-accent);
 }
 
 .card-thumbnail {
