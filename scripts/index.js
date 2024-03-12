@@ -46,6 +46,12 @@ function insertProjectsIntoHTML(arrayOfProjects) {
 
 const listOfProjects = [
     {
+        name: "Flappy Bird",
+        githubLink: "https://github.com/ethan-l-m-e/flappy-bird-clone",
+        playLink: "https://ethan-l-m-e.github.io/flappy-bird-clone/",
+        imageSrc: "./images/flappy-bird.jpg"
+    },
+    {
         name: "Sudoku",
         githubLink: "https://github.com/ethan-l-m-e/sudoku_game",
         playLink: "https://ethan-l-m-e.github.io/sudoku_game/",
